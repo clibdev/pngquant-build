@@ -14,4 +14,4 @@ jobs:
         with:
           repository: kornelski/pngquant
           path: build
-          ref: refs/tags/${{github.ref_name}}
+          #ref: refs/tags/${{github.ref_name}}
