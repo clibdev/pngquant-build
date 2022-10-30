@@ -12,12 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          repository: kornelski/pngquant
-          submodules: recursive
+          repository: haampie/libtree
           path: build
-          ref: refs/tags/2.17.0
-      - name: Install
-        run: sudo apt install -y libpng-dev
+          ref: refs/tags/v3.1.1
       - name: Build
         working-directory: build
         run: make -j$(nproc)
