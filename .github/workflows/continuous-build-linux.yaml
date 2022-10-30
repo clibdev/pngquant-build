@@ -16,3 +16,5 @@ jobs:
           ref: refs/tags/2.17.0
       - name: Install
         run: apt install -y libpng-dev
+      - name: Build
+        run: make -j$(nproc)
