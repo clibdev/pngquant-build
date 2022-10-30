@@ -5,7 +5,9 @@ on:
 
 jobs:
   static-build:
-    runs-on: dockcross/linux-arm64
+    runs-on: ubuntu-latest
+    container:
+      image: dockcross/linux-arm64
     steps:
       - name: Checkout
         uses: actions/checkout@v3
