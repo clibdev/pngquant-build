@@ -1,9 +1,7 @@
 name: Continuous Build Linux
 
 on:
-  push:
-    tags:
-      - '*'
+  push
 
 jobs:
   static-build:
