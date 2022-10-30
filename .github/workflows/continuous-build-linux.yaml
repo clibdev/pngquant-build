@@ -17,4 +17,5 @@ jobs:
       - name: Install
         run: sudo apt install -y libpng-dev
       - name: Build
+        working-directory: build
         run: make -j$(nproc)
