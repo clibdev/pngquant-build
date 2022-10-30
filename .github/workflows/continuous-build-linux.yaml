@@ -13,3 +13,5 @@ jobs:
           repository: kornelski/pngquant
           path: build
           ref: refs/tags/2.17.0
+      - name: Install
+        run: apt install -y libpng-dev
