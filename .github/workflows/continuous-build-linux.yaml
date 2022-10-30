@@ -1,0 +1,17 @@
+name: Continuous Build Linux
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  static-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: kornelski/pngquant
+          path: build
+          ref: refs/tags/${{github.ref_name}}
